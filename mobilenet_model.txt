@@ -1,0 +1,278 @@
+Model: "model_10"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_11 (InputLayer)       [(None, 32, 32, 3)]       0         
+                                                                 
+ quantize_layer_9 (QuantizeL  (None, 32, 32, 3)        3         
+ ayer)                                                           
+                                                                 
+ quant_conv1 (QuantizeWrappe  (None, 16, 16, 32)       929       
+ rV2)                                                            
+                                                                 
+ quant_conv1_bn (QuantizeWra  (None, 16, 16, 32)       129       
+ pperV2)                                                         
+                                                                 
+ quant_conv1_relu (QuantizeW  (None, 16, 16, 32)       3         
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_1 (QuantizeWr  (None, 16, 16, 32)       291       
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_1_bn (Quantiz  (None, 16, 16, 32)       129       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_1_relu (Quant  (None, 16, 16, 32)       3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_1 (QuantizeWr  (None, 16, 16, 64)       2177      
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_1_bn (Quantiz  (None, 16, 16, 64)       257       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_1_relu (Quant  (None, 16, 16, 64)       3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pad_2 (QuantizeW  (None, 17, 17, 64)       1         
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_2 (QuantizeWr  (None, 8, 8, 64)         579       
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_2_bn (Quantiz  (None, 8, 8, 64)         257       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_2_relu (Quant  (None, 8, 8, 64)         3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_2 (QuantizeWr  (None, 8, 8, 128)        8449      
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_2_bn (Quantiz  (None, 8, 8, 128)        513       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_2_relu (Quant  (None, 8, 8, 128)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_dw_3 (QuantizeWr  (None, 8, 8, 128)        1155      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_3_bn (Quantiz  (None, 8, 8, 128)        513       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_3_relu (Quant  (None, 8, 8, 128)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_3 (QuantizeWr  (None, 8, 8, 128)        16641     
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_3_bn (Quantiz  (None, 8, 8, 128)        513       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_3_relu (Quant  (None, 8, 8, 128)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pad_4 (QuantizeW  (None, 9, 9, 128)        1         
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_4 (QuantizeWr  (None, 4, 4, 128)        1155      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_4_bn (Quantiz  (None, 4, 4, 128)        513       
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_4_relu (Quant  (None, 4, 4, 128)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_4 (QuantizeWr  (None, 4, 4, 256)        33281     
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_4_bn (Quantiz  (None, 4, 4, 256)        1025      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_4_relu (Quant  (None, 4, 4, 256)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_dw_5 (QuantizeWr  (None, 4, 4, 256)        2307      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_5_bn (Quantiz  (None, 4, 4, 256)        1025      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_5_relu (Quant  (None, 4, 4, 256)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_5 (QuantizeWr  (None, 4, 4, 256)        66049     
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_5_bn (Quantiz  (None, 4, 4, 256)        1025      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_5_relu (Quant  (None, 4, 4, 256)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pad_6 (QuantizeW  (None, 5, 5, 256)        1         
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_6 (QuantizeWr  (None, 2, 2, 256)        2307      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_6_bn (Quantiz  (None, 2, 2, 256)        1025      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_6_relu (Quant  (None, 2, 2, 256)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_6 (QuantizeWr  (None, 2, 2, 512)        132097    
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_6_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_6_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_dw_7 (QuantizeWr  (None, 2, 2, 512)        4611      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_7_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_7_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_7 (QuantizeWr  (None, 2, 2, 512)        263169    
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_7_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_7_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_dw_8 (QuantizeWr  (None, 2, 2, 512)        4611      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_8_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_8_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_8 (QuantizeWr  (None, 2, 2, 512)        263169    
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_8_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_8_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_dw_9 (QuantizeWr  (None, 2, 2, 512)        4611      
+ apperV2)                                                        
+                                                                 
+ quant_conv_dw_9_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_dw_9_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_pw_9 (QuantizeWr  (None, 2, 2, 512)        263169    
+ apperV2)                                                        
+                                                                 
+ quant_conv_pw_9_bn (Quantiz  (None, 2, 2, 512)        2049      
+ eWrapperV2)                                                     
+                                                                 
+ quant_conv_pw_9_relu (Quant  (None, 2, 2, 512)        3         
+ izeWrapperV2)                                                   
+                                                                 
+ quant_conv_dw_10 (QuantizeW  (None, 2, 2, 512)        4611      
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_10_bn (Quanti  (None, 2, 2, 512)        2049      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_dw_10_relu (Quan  (None, 2, 2, 512)        3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_pw_10 (QuantizeW  (None, 2, 2, 512)        263169    
+ rapperV2)                                                       
+                                                                 
+ quant_conv_pw_10_bn (Quanti  (None, 2, 2, 512)        2049      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_pw_10_relu (Quan  (None, 2, 2, 512)        3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_dw_11 (QuantizeW  (None, 2, 2, 512)        4611      
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_11_bn (Quanti  (None, 2, 2, 512)        2049      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_dw_11_relu (Quan  (None, 2, 2, 512)        3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_pw_11 (QuantizeW  (None, 2, 2, 512)        263169    
+ rapperV2)                                                       
+                                                                 
+ quant_conv_pw_11_bn (Quanti  (None, 2, 2, 512)        2049      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_pw_11_relu (Quan  (None, 2, 2, 512)        3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_pad_12 (Quantize  (None, 3, 3, 512)        1         
+ WrapperV2)                                                      
+                                                                 
+ quant_conv_dw_12 (QuantizeW  (None, 1, 1, 512)        4611      
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_12_bn (Quanti  (None, 1, 1, 512)        2049      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_dw_12_relu (Quan  (None, 1, 1, 512)        3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_pw_12 (QuantizeW  (None, 1, 1, 1024)       526337    
+ rapperV2)                                                       
+                                                                 
+ quant_conv_pw_12_bn (Quanti  (None, 1, 1, 1024)       4097      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_pw_12_relu (Quan  (None, 1, 1, 1024)       3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_dw_13 (QuantizeW  (None, 1, 1, 1024)       9219      
+ rapperV2)                                                       
+                                                                 
+ quant_conv_dw_13_bn (Quanti  (None, 1, 1, 1024)       4097      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_dw_13_relu (Quan  (None, 1, 1, 1024)       3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_conv_pw_13 (QuantizeW  (None, 1, 1, 1024)       1050625   
+ rapperV2)                                                       
+                                                                 
+ quant_conv_pw_13_bn (Quanti  (None, 1, 1, 1024)       4097      
+ zeWrapperV2)                                                    
+                                                                 
+ quant_conv_pw_13_relu (Quan  (None, 1, 1, 1024)       3         
+ tizeWrapperV2)                                                  
+                                                                 
+ quant_global_average_poolin  (None, 1024)             3         
+ g2d_10 (QuantizeWrapperV2)                                      
+                                                                 
+ quant_dropout_10 (QuantizeW  (None, 1024)             1         
+ rapperV2)                                                       
+                                                                 
+ quant_dense_11 (QuantizeWra  (None, 10)               10255     
+ pperV2)                                                         
+                                                                 
+=================================================================
+Total params: 3,251,259
+Trainable params: 3,217,226
+Non-trainable params: 34,033
+_________________________________________________________________
