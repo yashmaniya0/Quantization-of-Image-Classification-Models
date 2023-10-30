@@ -39,11 +39,11 @@ We have used the Fashion MNIST dataset.
 
 ## **Results and Conclusions**
 
-| Model      | No. of Parameters | Non-Quantized Model Accuracy | 8-bit QAT Model Accuracy | Non-Quantized Model Accuracy | 8-bit QAT Model Accuracy |
+| Model      | No. of Parameters | Non-Quantized Model Accuracy | 8-bit QAT Model Accuracy | Non-Quantized Model Size | 8-bit QAT Model Size |
 | ---------- | ----------------- | ---------------------------- | ------------------------ | ---------------------------- | ------------------------ |
-| Normal CNN | 20,426            | 88.37 %                      | 87.30 %                  | 0.9174 mb                    | 0.233 mb                 |
-| MobileNet  | 3, 251, 259       | 85.72 %                      | 83.11 %                  | 12.71 mb                     | 3.36 mb                  |
-| VGG16      | 14, 781, 642      | 82.20 %                      | 71.82 %                  | 57.63 mb                     | 15.37 mb                 |
+| Normal CNN | 20,426            | 88.37 %                      | 87.30 %                  | 0.9174 Mb                    | 0.233 Mb                 |
+| MobileNet  | 3, 251, 259       | 85.72 %                      | 83.11 %                  | 12.71 Mb                     | 3.36 Mb                  |
+| VGG16      | 14, 781, 642      | 82.20 %                      | 71.82 %                  | 57.63 Mb                     | 15.37 Mb                 |
 
 - Quantization results in a significant reduction in model size, with up to 73.33% reduction in model size observed in the case of the VGG16 model.
 - In most cases, the accuracy of the 8-bit QAT (Quantization Aware Training) model is slightly lower than that of the non-quantized model. However, the drop in accuracy is relatively small and may be acceptable in resource-constrained environments.
